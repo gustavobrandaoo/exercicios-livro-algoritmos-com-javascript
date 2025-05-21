@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+</head>
+<body>
+    <h1>Restaurante JS</h1>
+
+    <form>
+        <p>Buffert por Quilo R$: <input type="number" id="valorQuilo" min="0" step="0.01" required></p>
+        <p>Consumo do Cliente (gr): <input type="number" id="grama" min="0" required></p>
+        <input type="submit" value="Calcular Preço">
+    </form>
+
+    <h2 id="valorFinal"></h2>
+
+    <script src="restaurante-converter-valor.js"></script>
+</body>
+</html>
