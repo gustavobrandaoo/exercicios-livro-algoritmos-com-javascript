@@ -1,10 +1,10 @@
-const forma = document.querySelector("#forma")
+const form = document.querySelector("#form")
 const tituloresp = document.querySelector("#tituloresp");
 const resultado = document.querySelector("#resultado");
 
-forma.addEventListener("submit", (event) => {
-    const titulo = forma.titulo.value;
-    const duracao = Number(forma.duracao.value);
+form.addEventListener("submit", (event) => {
+    const titulo = form.titulo.value;
+    const duracao = Number(form.duracao.value);
 
     const horas = Math.floor(duracao / 60);
     const minutos = duracao % 60;;
