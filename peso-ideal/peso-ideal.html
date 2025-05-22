@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+    <link rel="shortcut icon" href="icon.png" type="icon.png">
+    <link rel="stylesheet" href="peso-ideal.css">
+</head>
+<body>
+    <img src="desenho-animado-de-uma-balanca-de-peso-fofa-interpretando-um-ioio-design-fofo_152558-27808.jpg" alt="ilustração peso">
+
+    <h1>Programa Cálculo do Peso Ideal</h1>
+
+    <form>
+        <p>Nome: <input type="text" id="nome" required></p>
+        <p>Sexo: <input type="radio" name="sexo" id="masculino" required>Masculino <input type="radio" name="sexo" id="feminino" required>Feminino</p>
+        <p>Altura: <input type="number" min="0" max="2" step="0.01" id="altura" required></p>
+        <input type="submit" value="Calcular Peso Ideal">
+        <input type="reset" value="Limpar Campos">
+    </form>
+
+    <h2 id="resp"></h2>
+
+<script src="peso-ideal.js"></script>
+</body>
+</html>
