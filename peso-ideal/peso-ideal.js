@@ -10,6 +10,9 @@ form.addEventListener("submit", (event) => {
 
     let peso;
 
+    //operador ternário
+    //const peso = masculino ? 22 * Math.pow(altura, 2) : 21 * Math.pow(altura, 2);
+
     if (masculino) {    //if masculino == true
         peso = 22 * Math.pow(altura, 2);    //eleva ao quadrado.
     } else {
