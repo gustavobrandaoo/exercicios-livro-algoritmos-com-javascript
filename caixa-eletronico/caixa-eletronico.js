@@ -10,7 +10,7 @@ form.addEventListener("submit", (event) => {
 
     if (saque % 10 != 0) {
         alert("Valor inválido para notas disponíveis (R$ 10, 50, 100)")
-        form.saque.focus()
+        form.saque.focus()      //cursor de volta no campo de saque
         return
     }
 
