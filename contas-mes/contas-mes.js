@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
     const descricao = form.descricao.value;
     const valor = Number(form.valor.value);
 
-    numContas++
+    numContas++     //cada vez que clicar no botão, ele é ativado novamente.
 
     valorTotal = valorTotal + valor;
 
