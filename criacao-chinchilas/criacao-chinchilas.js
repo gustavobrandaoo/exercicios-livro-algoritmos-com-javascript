@@ -9,7 +9,7 @@ form.addEventListener("submit", (event) => {
 
     let repeticao = "" 
 
-    for (i = 0; i < anos; i++) {
+    for (i = 0; i <= anos; i++) {
         
         repeticao += `${i}º Ano: ${chinchilas} Chinchilas \n`
         chinchilas = chinchilas * 3
