@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
 //adiconar ouvinte botão urgenicia:
 
 form.urgencia.addEventListener("click", () => {
-    if (!form.checkValidity()) {
+    if (!form.checkValidity()) {    //se o campo paciente estiver vazio, mostra alerta.
         alert("Informe o nome do paciente a ser atendido em carácter urgência");
         form.paciente.focus();
         return;
@@ -52,7 +52,7 @@ form.atender.addEventListener("click", () => {
         return;
     }
 
-    const atender = pacientes.shift();      //remove do ínicio da fila (e obtém o nome)
+    const atender = pacientes.shift();      //remove a pessoa que tá na frente da fila com shift(). Guarda esse nome na variável atender.
     respostaNome.innerText = atender;
     let lista = ""
     pacientes.forEach((paciente, i) => (lista += `${i + 1}. ${paciente} \n`))
